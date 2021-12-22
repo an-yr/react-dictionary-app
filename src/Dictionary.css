@@ -3,6 +3,35 @@ body {
   font-family: "Spartan", sans-serif;
   background: rgba(102, 83, 226, 0.11);
 }
+.background-purple {
+  background-blend-mode: hard-light;
+  background: radial-gradient(
+    81.11% 160.4% at 96.84% 95.36%,
+    #6653e2 0%,
+    #6d57f7 18.88%,
+    #634ee8 42.14%,
+    #6853f0 67.18%,
+    #6653e2 100%
+  );
+  height: 100vh;
+}
+.background-second {
+  background: radial-gradient(
+    63.72% 63.72% at 58.09% 34.03%,
+    rgba(25, 152, 223, 0.38) 33.86%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  height: 100vh;
+}
+.background-third {
+  background: linear-gradient(
+    239.82deg,
+    rgba(21, 21, 21, 0.817708) -29.36%,
+    #272727 -29.36%,
+    rgba(168, 164, 164, 0) 44.03%
+  );
+  height: 100vh;
+}
 h1 {
   font-family: "Spartan", sans-serif;
   color: white;
@@ -53,35 +82,6 @@ button {
 button:hover {
   background-color: #2e1ba8;
   color: white;
-}
-.background-purple {
-  background: radial-gradient(
-    81.11% 160.4% at 96.84% 95.36%,
-    #6653e2 0%,
-    #6d57f7 18.88%,
-    #634ee8 42.14%,
-    #6853f0 67.18%,
-    #6653e2 100%
-  );
-  background-blend-mode: hard-light;
-  height: 100vh;
-}
-.background-second {
-  background: radial-gradient(
-    63.72% 63.72% at 58.09% 34.03%,
-    rgba(25, 152, 223, 0.38) 33.86%,
-    rgba(196, 196, 196, 0) 100%
-  );
-  height: 100vh;
-}
-.background-third {
-  background: linear-gradient(
-    239.82deg,
-    rgba(21, 21, 21, 0.817708) -29.36%,
-    #272727 -29.36%,
-    rgba(168, 164, 164, 0) 44.03%
-  );
-  height: 100vh;
 }
 .lupa {
   width: 16%;
