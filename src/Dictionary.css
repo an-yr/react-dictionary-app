@@ -3,12 +3,58 @@ body {
   font-family: "Spartan", sans-serif;
   background: rgba(102, 83, 226, 0.11);
 }
+h1 {
+  font-family: "Spartan", sans-serif;
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 25vh;
+  text-align: center;
+}
+form {
+  margin: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+input {
+  border: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  padding-left: 20px;
+  color: #2e1ba8;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 250ms ease-in-out;
+}
+input:focus {
+  outline: none;
+  background: white;
+}
+input:hover {
+  background: white;
+}
+::-webkit-input-placeholder {
+  color: #2e1ba8;
+  letter-spacing: 1px;
+}
+button {
+  color: #2e1ba8;
+  background-color: white;
+  font-size: 17px;
+  margin: 0;
+  margin-left: 8px;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 250ms ease-in-out;
+}
+button:hover {
+  background-color: #2e1ba8;
+  color: white;
+}
 .background-purple {
-  /* background: linear-gradient(89.9deg, #6653e2 1.7%, #7464db 98.85%); */
-
-  background-blend-mode: hard-light;
-  height: 100vh;
-
   background: radial-gradient(
     81.11% 160.4% at 96.84% 95.36%,
     #6653e2 0%,
@@ -17,6 +63,8 @@ body {
     #6853f0 67.18%,
     #6653e2 100%
   );
+  background-blend-mode: hard-light;
+  height: 100vh;
 }
 .background-second {
   background: radial-gradient(
@@ -35,61 +83,16 @@ body {
   );
   height: 100vh;
 }
-h1 {
-  font-family: "Spartan", sans-serif;
-  color: white;
-  font-size: 60px;
-  font-weight: 400;
-  margin: 0;
-  padding-top: 160px;
-  text-align: center;
-}
-form {
-  margin: 50px;
-  text-align: center;
-  padding-top: 10px;
-}
-input {
-  border: none;
-  font-size: 20px;
-  margin: 0;
-  padding: 10px;
-  padding-left: 20px;
-  color: white;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  transition: all 250ms ease-in-out;
-}
-input:focus {
-  outline: none;
-  background: #2e1ba8;
-}
-input:hover {
-  background: #2e1ba8;
-}
-::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.7);
-  letter-spacing: 1px;
-}
-button {
-  color: #2e1ba8;
-  background-color: white;
-  font-size: 17px;
-  margin: 0;
-  margin-left: 8px;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  transition: all 250ms ease-in-out;
-}
-button:hover {
-  background-color: #2e1ba8;
-  color: white;
-}
 .lupa {
   width: 16%;
   margin: auto;
   display: block;
+}
+.results {
+  font-size: 14px;
+  position: relative;
+  top: -35vh;
+  text-align: left;
 }
 .result {
   background-color: white;
@@ -98,7 +101,34 @@ button:hover {
   border-radius: 15px;
   box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.25);
 }
-.results {
-  top: -170px;
-  position: relative;
+@media (max-width: 1200px) {
+  .results {
+    top: -15vh;
+  }
+  .result {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+  input {
+    padding-left: 10px;
+  }
+  input,
+  button {
+    font-size: 15px;
+    padding: 6px;
+  }
+  form {
+    margin: 20px;
+    padding: 10px 0;
+  }
+  .results {
+    font-size: 12px;
+    top: -10vh;
+  }
 }
