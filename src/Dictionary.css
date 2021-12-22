@@ -75,12 +75,19 @@ button:hover {
   height: 100vh;
 }
 .background-third {
-  background: linear-gradient(
+  /* background: linear-gradient(
     239.82deg,
     rgba(21, 21, 21, 0.817708) -29.36%,
     #272727 -29.36%,
     rgba(168, 164, 164, 0) 44.03%
+  ); */
+  background: linear-gradient(
+    239.82deg,
+    hsla(0, 0%, 8%, 0.818) -29.36%,
+    #272727ad 0,
+    hsla(0, 2%, 65%, 0) 44.03%
   );
+
   height: 100vh;
 }
 .lupa {
