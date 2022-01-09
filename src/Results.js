@@ -6,11 +6,11 @@ import "./Results.css";
 export default function Results(props) {
   if (props.results) {
     return (
-      <div className="results">
-        <div className="result">
+      <div className="Results">
+        <div className="result keyword-result">
           <h2>{props.results.word}</h2>
           {props.results.phonetics.map((phonetic, idx) => (
-            <div key={idx}>
+            <div className="audio-result" key={idx}>
               <Phonetics phonetic={phonetic} />
             </div>
           ))}

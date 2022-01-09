@@ -1,7 +1,14 @@
-.results {
-  font-size: 14px;
+.Results .keyword-result {
+  display: flex;
 }
-.result {
+.Results h2 {
+  margin: 0;
+  margin-right: 15px;
+}
+.Results .audio-result {
+  align-self: center;
+}
+.Results .result {
   background-color: white;
   padding: 20px 30px;
   margin: 20px 150px;
