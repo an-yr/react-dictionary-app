@@ -7,15 +7,13 @@ function App() {
       <div className="background-purple">
         <div className="background-second">
           <div className="background-third">
-            <h1>Dictionary App</h1>
-            <Dictionary />
+            <h1>Dictionary</h1>
+            <Dictionary defaultKeyword="sunset" />
             <p>
-              <strong>
-                Coded by Angela Yuri and{" "}
-                <a href="https://github.com/an-yr/react-dictionary-app">
-                  open-sourced
-                </a>
-              </strong>
+              Coded by Angela Yuri and{" "}
+              <a href="https://github.com/an-yr/react-dictionary-app">
+                open-sourced.
+              </a>
             </p>
           </div>
         </div>

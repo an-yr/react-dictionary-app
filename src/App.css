@@ -1,38 +1,51 @@
-.App {
+.App h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 10vh;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App p,
+.App a {
   color: white;
+  font-size: 12px;
+  margin: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.App p {
+  text-align: center;
+  padding-bottom: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.App .background-purple {
+  background: radial-gradient(
+    81.11% 160.4% at 96.84% 95.36%,
+    #6653e2 0%,
+    #6d57f7 18.88%,
+    #634ee8 42.14%,
+    #6853f0 67.18%,
+    #6653e2 100%
+  );
+  background-blend-mode: hard-light;
+  height: 100%;
+}
+.App .background-second {
+  background: radial-gradient(
+    63.72% 63.72% at 58.09% 34.03%,
+    rgba(25, 152, 223, 0.38) 33.86%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  height: 100%;
+}
+.App .background-third {
+  background: linear-gradient(
+    239.82deg,
+    hsla(0, 0%, 8%, 0.818) -29.36%,
+    #272727ad 0,
+    hsla(0, 2%, 65%, 0) 44.03%
+  );
+  height: 100%;
 }
