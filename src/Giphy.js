@@ -9,11 +9,17 @@ export default function Giphy(props) {
           {props.giphy.data.map(function (giphy, idx) {
             return (
               <div className="col-3 p-0" key={idx}>
-                <img
-                  src={giphy.images.fixed_width.url}
-                  alt="gifs"
-                  className="my-3"
-                ></img>
+                <a
+                  href={props.giphy.data[0].url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={giphy.images.fixed_width.url}
+                    alt="gifs"
+                    className="my-3"
+                  ></img>
+                </a>
               </div>
             );
           })}
