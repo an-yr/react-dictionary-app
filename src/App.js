@@ -8,7 +8,7 @@ function App() {
         <div className="background-second">
           <div className="background-third">
             <h1>Dictionary</h1>
-            <Dictionary defaultKeyword="sunset" />
+            <Dictionary defaultKeyword="love" />
             <p>
               Coded by Angela Yuri and{" "}
               <a href="https://github.com/an-yr/react-dictionary-app">
