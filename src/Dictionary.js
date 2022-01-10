@@ -10,7 +10,7 @@ export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
-  const [giphy, setGiphy] = useState(props.defaultKeyword);
+  const [giphy, setGiphy] = useState();
 
   function handleResponse(response) {
     setResults(response.data[0]);
@@ -24,7 +24,7 @@ export default function Dictionary(props) {
     let api = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(api).then(handleResponse);
 
-    let giphyApi = `https://api.giphy.com/v1/gifs/search?api_key=mzUhnle47A20ME1CXNjc3vX3CtXydElb&q=${keyword}}&limit=9&offset=0&rating=g&lang=en`;
+    let giphyApi = `https://api.giphy.com/v1/gifs/search?api_key=mzUhnle47A20ME1CXNjc3vX3CtXydElb&q=${keyword}}&limit=12&offset=0&rating=g&lang=en`;
     axios.get(giphyApi).then(handleGiphyResponse);
   }
 
@@ -44,8 +44,12 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <div className="search-background">
-          <div className="container">
-            <img src={image_work} className="work" alt="Girl working" />
+          <div className="d-flex">
+            <img
+              src={image_work}
+              className="m-auto d-block"
+              alt="Girl working"
+            />
             <div>
               <form onSubmit={handleSubmit}>
                 <input
@@ -60,10 +64,12 @@ export default function Dictionary(props) {
                   <i className="fas fa-search"></i>
                 </button>
               </form>
-              <p>i.e.: environment, biodiversity, star,...</p>
+              <p className="p-0 m-0">
+                i.e.: environment, biodiversity, star,...
+              </p>
             </div>
             <img
-              className="lupa"
+              className="m-auto d-block"
               src={image_lupa}
               alt="Two girls on the phone reading"
             />

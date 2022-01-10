@@ -7,10 +7,10 @@ export default function Results(props) {
   if (props.results) {
     return (
       <div className="Results">
-        <div className="result keyword-result">
-          <h2>{props.results.word}</h2>
+        <div className="result d-flex">
+          <h2 className="m-0">{props.results.word}</h2>
           {props.results.phonetics.map((phonetic, idx) => (
-            <div className="audio-result" key={idx}>
+            <div key={idx}>
               <Phonetics phonetic={phonetic} />
             </div>
           ))}

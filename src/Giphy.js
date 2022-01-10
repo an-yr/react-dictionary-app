@@ -1,4 +1,5 @@
 import React from "react";
+import "./Giphy.css";
 
 export default function Giphy(props) {
   if (props.giphy) {
@@ -7,11 +8,11 @@ export default function Giphy(props) {
         <div className="row">
           {props.giphy.data.map(function (giphy, idx) {
             return (
-              <div className="col-4" key={idx}>
+              <div className="col-3 p-0" key={idx}>
                 <img
-                  src={giphy.images.fixed_height.url}
+                  src={giphy.images.fixed_width.url}
                   alt="gifs"
-                  className=""
+                  className="my-3"
                 ></img>
               </div>
             );
