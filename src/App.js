@@ -7,7 +7,7 @@ function App() {
       <div className="background-purple">
         <div className="background-second">
           <div className="background-third">
-            <h1>Dictionary</h1>
+            <h1>What word do you want to look up?</h1>
             <Dictionary defaultKeyword="love" />
             <p>
               Coded by Angela Yuri and{" "}
