@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Dictionary.css";
 import image_lupa from "./image_lupa.png";
 import image_work from "./image_work.png";
+import giphy_logo from "./giphy_logo.png";
 import axios from "axios";
 import Results from "./Results";
 import Giphy from "./Giphy";
@@ -78,6 +79,11 @@ export default function Dictionary(props) {
         <Results results={results} />
         <div className="result">
           <Giphy giphy={giphy} />
+          <img
+            src={giphy_logo}
+            className="giphy-logo m-auto d-block"
+            alt="Giphy logo"
+          />
         </div>
       </div>
     );

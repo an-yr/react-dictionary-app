@@ -55,6 +55,9 @@ body {
 .Dictionary img {
   width: 16%;
 }
+.Dictionary .giphy-logo {
+  width: 50px;
+}
 .Dictionary .result {
   background-color: white;
   padding: 20px 30px;
