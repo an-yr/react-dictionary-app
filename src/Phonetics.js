@@ -8,11 +8,11 @@ export default function Phonetics(props) {
         href={props.phonetic.audio}
         target="_blank"
         rel="noreferrer"
-        className="py-1 px-2 me-1"
+        className="py-1 px-2 me-1 align-self-center"
       >
         Listen
       </a>
-      <p className="p-0">{props.phonetic.text}</p>
+      <p className="p-0 m-0 align-self-center">{props.phonetic.text}</p>
     </div>
   );
 }

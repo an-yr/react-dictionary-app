@@ -15,7 +15,7 @@ export default function Results(props) {
             </div>
           ))}
         </div>
-        <div className="result mx-2 my-3 mx-md-5 p-4">
+        <div className="result mx-2 my-3 mx-md-5 p-4 pt-0">
           {props.results.meanings.map(function (meaning, idx) {
             return (
               <div key={idx}>

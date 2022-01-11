@@ -4,11 +4,11 @@ import "./Definition.css";
 
 export default function Definition(props) {
   return (
-    <div className="Definition">
-      <p>
+    <div className="Definition mt-4">
+      <p className="mb-1 mb-sm-2">
         {props.idx + 1}.{props.definition.definition}
       </p>
-      <div className="exemple">
+      <div className="example ms-0 ms-sm-3 mb-1 mb-sm-3">
         <i>
           {" "}
           example:"
@@ -18,7 +18,7 @@ export default function Definition(props) {
       {props.definition.synonyms.map(function (synonym, idx) {
         if (idx < 10) {
           return (
-            <div className="synonym-result" key={idx}>
+            <div className="synonym-result px-2 py-1" key={idx}>
               <Synonyms synonyms={synonym} />
             </div>
           );
