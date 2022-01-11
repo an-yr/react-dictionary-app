@@ -43,45 +43,47 @@ export default function Dictionary(props) {
   }
   if (loaded) {
     return (
-      <div className="Dictionary">
-        <div className="search-background">
+      <div className="Dictionary container">
+        <div className="search-background mx-2 my-3 mx-md-5 p-4 p-sm-0">
           <div className="d-flex">
             <img
               src={image_work}
-              className="m-auto d-block"
+              className="m-auto d-sm-block d-none"
               alt="Girl working"
             />
             <div>
-              <form onSubmit={handleSubmit}>
+              <form className="m-0" onSubmit={handleSubmit}>
                 <input
-                  className="input"
+                  className="input px-3 py-1 m-0 mt-sm-5 mb-sm-1"
                   type="search"
                   placeholder="Search word..."
                   autoFocus="on"
                   onChange={handleKeywordChange}
                   defaultValue={props.defaultKeyword}
                 />
-                <button type="submit" value="Search">
+                <button className="ms-2 px-2 py-1" type="submit" value="Search">
                   <i className="fas fa-search"></i>
                 </button>
+                <p className="ms-4 m-0">
+                  i.e.: environment, biodiversity, star,...
+                </p>
               </form>
-              <p className="p-0 m-0">
-                i.e.: environment, biodiversity, star,...
-              </p>
             </div>
             <img
-              className="m-auto d-block"
+              className="m-auto d-sm-block d-none"
               src={image_lupa}
               alt="Two girls on the phone reading"
             />
           </div>
         </div>
         <Results results={results} />
-        <div className="result">
-          <Giphy giphy={giphy} />
+        <div className="result mx-2 my-3 mx-md-5 py-3">
+          <div className="ps-5">
+            <Giphy giphy={giphy} />
+          </div>
           <img
             src={giphy_logo}
-            className="giphy-logo m-auto d-block"
+            className="giphy-logo m-auto d-block "
             alt="Giphy logo"
           />
         </div>

@@ -8,7 +8,7 @@ export default function Giphy(props) {
         <div className="row">
           {props.giphy.data.map(function (giphy, idx) {
             return (
-              <div className="col-3 p-0" key={idx}>
+              <div className="col-6 col-sm-3 p-0" key={idx}>
                 <a
                   href={props.giphy.data[0].url}
                   target="_blank"
@@ -17,7 +17,7 @@ export default function Giphy(props) {
                   <img
                     src={giphy.images.fixed_width.url}
                     alt="gifs"
-                    className="my-3"
+                    className="my-1 mx-1 mx-sm-0"
                   ></img>
                 </a>
               </div>
