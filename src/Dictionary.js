@@ -52,9 +52,9 @@ export default function Dictionary(props) {
               alt="Girl working"
             />
             <div>
-              <form className="m-0" onSubmit={handleSubmit}>
+              <form className="m-0 ms-3 ms-sm-0" onSubmit={handleSubmit}>
                 <input
-                  className="input px-3 py-1 m-0 mt-sm-5 mb-sm-1"
+                  className="input px-3 py-1 m-0 mt-sm-5 mb-sm-1 "
                   type="search"
                   placeholder="Search word..."
                   autoFocus="on"
