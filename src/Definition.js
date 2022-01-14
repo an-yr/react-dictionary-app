@@ -1,5 +1,6 @@
 import React from "react";
 import Synonyms from "./Synonyms";
+import Example from "./Example";
 import "./Definition.css";
 
 export default function Definition(props) {
@@ -8,13 +9,8 @@ export default function Definition(props) {
       <p className="mb-1 mb-sm-2">
         {props.idx + 1}.{props.definition.definition}
       </p>
-      <div className="example ms-0 ms-sm-3 mb-1 mb-sm-3">
-        <i>
-          {" "}
-          example:"
-          {props.definition.example}"
-        </i>
-      </div>
+      <Example example={props.definition.example} />
+
       {props.definition.synonyms.map(function (synonym, idx) {
         if (idx < 10) {
           return (
